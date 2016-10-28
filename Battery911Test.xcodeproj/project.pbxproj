@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5EB25D10A6885A771009C5 /* libPods-Battery911TestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D659A967DDA6C89CE2633059 /* libPods-Battery911TestTests.a */; };
+		4C8472E81DC30B2E00237776 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8472E71DC30B2E00237776 /* Defines.swift */; };
 		4CB00DF81DC2C65A0018277D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00DF71DC2C65A0018277D /* AppDelegate.swift */; };
-		4CB00DFA1DC2C65A0018277D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00DF91DC2C65A0018277D /* FirstViewController.swift */; };
-		4CB00DFC1DC2C65A0018277D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00DFB1DC2C65A0018277D /* SecondViewController.swift */; };
 		4CB00DFF1DC2C65A0018277D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB00DFD1DC2C65A0018277D /* Main.storyboard */; };
 		4CB00E011DC2C65A0018277D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB00E001DC2C65A0018277D /* Assets.xcassets */; };
 		4CB00E041DC2C65A0018277D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB00E021DC2C65A0018277D /* LaunchScreen.storyboard */; };
 		4CB00E0F1DC2C65A0018277D /* Battery911TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E0E1DC2C65A0018277D /* Battery911TestTests.swift */; };
+		4CB00E1D1DC2C8E80018277D /* TestResult22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E1C1DC2C8E80018277D /* TestResult22.swift */; };
+		4CB00E221DC2CEE10018277D /* battery911Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E201DC2CEE10018277D /* battery911Model.xcdatamodeld */; };
+		4CB00E2C1DC2D0BD0018277D /* TestResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E2A1DC2D0BD0018277D /* TestResult+CoreDataProperties.swift */; };
+		4CB00E2D1DC2D0BD0018277D /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E2B1DC2D0BD0018277D /* TestResult.swift */; };
+		4CB00E2F1DC2E6DE0018277D /* TestResultListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E2E1DC2E6DE0018277D /* TestResultListTableViewController.swift */; };
+		4CB00E321DC2F6880018277D /* TestResultListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB00E311DC2F6880018277D /* TestResultListTableViewCell.xib */; };
+		4CB00E341DC2F6A20018277D /* TestResultListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E331DC2F6A20018277D /* TestResultListTableViewCell.swift */; };
+		570DF570458CFC5AE414CEC2 /* libPods-Battery911Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB59D8B9AAE0365E2645432 /* libPods-Battery911Test.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22F2D0FDC2F4D26D765AB90E /* Pods-Battery911Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Battery911Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Battery911Test/Pods-Battery911Test.release.xcconfig"; sourceTree = "<group>"; };
+		253CB3D70E12A50292C8323B /* Pods-Battery911Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Battery911Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Battery911Test/Pods-Battery911Test.debug.xcconfig"; sourceTree = "<group>"; };
+		4C8472E71DC30B2E00237776 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
 		4CB00DF41DC2C65A0018277D /* Battery911Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Battery911Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB00DF71DC2C65A0018277D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CB00DF91DC2C65A0018277D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4CB00DFB1DC2C65A0018277D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		4CB00DFE1DC2C65A0018277D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CB00E001DC2C65A0018277D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CB00E031DC2C65A0018277D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +47,18 @@
 		4CB00E0A1DC2C65A0018277D /* Battery911TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Battery911TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB00E0E1DC2C65A0018277D /* Battery911TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battery911TestTests.swift; sourceTree = "<group>"; };
 		4CB00E101DC2C65A0018277D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CB00E1C1DC2C8E80018277D /* TestResult22.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResult22.swift; sourceTree = "<group>"; };
+		4CB00E211DC2CEE10018277D /* battery911Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = battery911Model.xcdatamodel; sourceTree = "<group>"; };
+		4CB00E231DC2D0640018277D /* Battery911Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Battery911Test-Bridging-Header.h"; sourceTree = "<group>"; };
+		4CB00E2A1DC2D0BD0018277D /* TestResult+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TestResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4CB00E2B1DC2D0BD0018277D /* TestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResult.swift; sourceTree = "<group>"; };
+		4CB00E2E1DC2E6DE0018277D /* TestResultListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultListTableViewController.swift; sourceTree = "<group>"; };
+		4CB00E311DC2F6880018277D /* TestResultListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestResultListTableViewCell.xib; sourceTree = "<group>"; };
+		4CB00E331DC2F6A20018277D /* TestResultListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultListTableViewCell.swift; sourceTree = "<group>"; };
+		9DD0FBEFD6965AE7344FD7B5 /* Pods-Battery911TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Battery911TestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Battery911TestTests/Pods-Battery911TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADB59D8B9AAE0365E2645432 /* libPods-Battery911Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Battery911Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C687B6F505CD5D081512D116 /* Pods-Battery911TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Battery911TestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Battery911TestTests/Pods-Battery911TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		D659A967DDA6C89CE2633059 /* libPods-Battery911TestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Battery911TestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570DF570458CFC5AE414CEC2 /* libPods-Battery911Test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +74,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5EB25D10A6885A771009C5 /* libPods-Battery911TestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		468C7573A51D51761DFDA0FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADB59D8B9AAE0365E2645432 /* libPods-Battery911Test.a */,
+				D659A967DDA6C89CE2633059 /* libPods-Battery911TestTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4CB00DEB1DC2C65A0018277D = {
 			isa = PBXGroup;
 			children = (
 				4CB00DF61DC2C65A0018277D /* Battery911Test */,
 				4CB00E0D1DC2C65A0018277D /* Battery911TestTests */,
 				4CB00DF51DC2C65A0018277D /* Products */,
+				4CB00E231DC2D0640018277D /* Battery911Test-Bridging-Header.h */,
+				E3B194CF3296B1AAE64D0D04 /* Pods */,
+				468C7573A51D51761DFDA0FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +114,16 @@
 		4CB00DF61DC2C65A0018277D /* Battery911Test */ = {
 			isa = PBXGroup;
 			children = (
+				4CB00E1E1DC2CE740018277D /* Core Data */,
 				4CB00DF71DC2C65A0018277D /* AppDelegate.swift */,
-				4CB00DF91DC2C65A0018277D /* FirstViewController.swift */,
-				4CB00DFB1DC2C65A0018277D /* SecondViewController.swift */,
-				4CB00DFD1DC2C65A0018277D /* Main.storyboard */,
+				4C8472E71DC30B2E00237776 /* Defines.swift */,
 				4CB00E001DC2C65A0018277D /* Assets.xcassets */,
-				4CB00E021DC2C65A0018277D /* LaunchScreen.storyboard */,
+				4CB00E1A1DC2C7970018277D /* Custom Objects */,
+				4CB00E1B1DC2C7FD0018277D /* Custom Views */,
 				4CB00E051DC2C65A0018277D /* Info.plist */,
+				4CB00E021DC2C65A0018277D /* LaunchScreen.storyboard */,
+				4CB00DFD1DC2C65A0018277D /* Main.storyboard */,
+				4CB00E191DC2C7710018277D /* View Controllers */,
 			);
 			path = Battery911Test;
 			sourceTree = "<group>";
@@ -99,6 +137,68 @@
 			path = Battery911TestTests;
 			sourceTree = "<group>";
 		};
+		4CB00E191DC2C7710018277D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CB00E2E1DC2E6DE0018277D /* TestResultListTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4CB00E1A1DC2C7970018277D /* Custom Objects */ = {
+			isa = PBXGroup;
+			children = (
+				4CB00E1C1DC2C8E80018277D /* TestResult22.swift */,
+			);
+			path = "Custom Objects";
+			sourceTree = "<group>";
+		};
+		4CB00E1B1DC2C7FD0018277D /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CB00E301DC2F5D00018277D /* Table View Cell */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		4CB00E1E1DC2CE740018277D /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				4CB00E1F1DC2CE7F0018277D /* Model Classes */,
+				4CB00E201DC2CEE10018277D /* battery911Model.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		4CB00E1F1DC2CE7F0018277D /* Model Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4CB00E2A1DC2D0BD0018277D /* TestResult+CoreDataProperties.swift */,
+				4CB00E2B1DC2D0BD0018277D /* TestResult.swift */,
+			);
+			name = "Model Classes";
+			sourceTree = "<group>";
+		};
+		4CB00E301DC2F5D00018277D /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4CB00E311DC2F6880018277D /* TestResultListTableViewCell.xib */,
+				4CB00E331DC2F6A20018277D /* TestResultListTableViewCell.swift */,
+			);
+			name = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		E3B194CF3296B1AAE64D0D04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				253CB3D70E12A50292C8323B /* Pods-Battery911Test.debug.xcconfig */,
+				22F2D0FDC2F4D26D765AB90E /* Pods-Battery911Test.release.xcconfig */,
+				9DD0FBEFD6965AE7344FD7B5 /* Pods-Battery911TestTests.debug.xcconfig */,
+				C687B6F505CD5D081512D116 /* Pods-Battery911TestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CB00E131DC2C65A0018277D /* Build configuration list for PBXNativeTarget "Battery911Test" */;
 			buildPhases = (
+				551EDEAE4A86FD19CC3C220F /* [CP] Check Pods Manifest.lock */,
 				4CB00DF01DC2C65A0018277D /* Sources */,
 				4CB00DF11DC2C65A0018277D /* Frameworks */,
 				4CB00DF21DC2C65A0018277D /* Resources */,
+				11254A05197305B424FD3C9A /* [CP] Embed Pods Frameworks */,
+				3D20888504940873E1969DFF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CB00E161DC2C65A0018277D /* Build configuration list for PBXNativeTarget "Battery911TestTests" */;
 			buildPhases = (
+				7D5D808B04BC3313AC04C6E9 /* [CP] Check Pods Manifest.lock */,
 				4CB00E061DC2C65A0018277D /* Sources */,
 				4CB00E071DC2C65A0018277D /* Frameworks */,
 				4CB00E081DC2C65A0018277D /* Resources */,
+				329BF5D87D0C985519F3F019 /* [CP] Embed Pods Frameworks */,
+				5D4C38A15B975D8998E8AA10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,7 +251,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "SDCrossVIsion Development Studios";
+				ORGANIZATIONNAME = "CrossVIsion Development Studios";
 				TargetAttributes = {
 					4CB00DF31DC2C65A0018277D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -182,6 +288,7 @@
 			files = (
 				4CB00E041DC2C65A0018277D /* LaunchScreen.storyboard in Resources */,
 				4CB00E011DC2C65A0018277D /* Assets.xcassets in Resources */,
+				4CB00E321DC2F6880018277D /* TestResultListTableViewCell.xib in Resources */,
 				4CB00DFF1DC2C65A0018277D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,14 +302,112 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11254A05197305B424FD3C9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Battery911Test/Pods-Battery911Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		329BF5D87D0C985519F3F019 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Battery911TestTests/Pods-Battery911TestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D20888504940873E1969DFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Battery911Test/Pods-Battery911Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		551EDEAE4A86FD19CC3C220F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D4C38A15B975D8998E8AA10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Battery911TestTests/Pods-Battery911TestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D5D808B04BC3313AC04C6E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CB00DF01DC2C65A0018277D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CB00DFC1DC2C65A0018277D /* SecondViewController.swift in Sources */,
+				4CB00E2C1DC2D0BD0018277D /* TestResult+CoreDataProperties.swift in Sources */,
+				4CB00E341DC2F6A20018277D /* TestResultListTableViewCell.swift in Sources */,
+				4CB00E1D1DC2C8E80018277D /* TestResult22.swift in Sources */,
+				4CB00E2F1DC2E6DE0018277D /* TestResultListTableViewController.swift in Sources */,
+				4CB00E221DC2CEE10018277D /* battery911Model.xcdatamodeld in Sources */,
 				4CB00DF81DC2C65A0018277D /* AppDelegate.swift in Sources */,
-				4CB00DFA1DC2C65A0018277D /* FirstViewController.swift in Sources */,
+				4C8472E81DC30B2E00237776 /* Defines.swift in Sources */,
+				4CB00E2D1DC2D0BD0018277D /* TestResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,28 +536,36 @@
 		};
 		4CB00E141DC2C65A0018277D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253CB3D70E12A50292C8323B /* Pods-Battery911Test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Battery911Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sdCVDS.Battery911Test;
+				PRODUCT_BUNDLE_IDENTIFIER = CVDS.Battery911Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Battery911Test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4CB00E151DC2C65A0018277D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F2D0FDC2F4D26D765AB90E /* Pods-Battery911Test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Battery911Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = sdCVDS.Battery911Test;
+				PRODUCT_BUNDLE_IDENTIFIER = CVDS.Battery911Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Battery911Test-Bridging-Header.h";
 			};
 			name = Release;
 		};
 		4CB00E171DC2C65A0018277D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD0FBEFD6965AE7344FD7B5 /* Pods-Battery911TestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Battery911TestTests/Info.plist;
@@ -365,6 +578,7 @@
 		};
 		4CB00E181DC2C65A0018277D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C687B6F505CD5D081512D116 /* Pods-Battery911TestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Battery911TestTests/Info.plist;
@@ -394,6 +608,7 @@
 				4CB00E151DC2C65A0018277D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CB00E161DC2C65A0018277D /* Build configuration list for PBXNativeTarget "Battery911TestTests" */ = {
 			isa = XCConfigurationList;
@@ -402,8 +617,22 @@
 				4CB00E181DC2C65A0018277D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CB00E201DC2CEE10018277D /* battery911Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CB00E211DC2CEE10018277D /* battery911Model.xcdatamodel */,
+			);
+			currentVersion = 4CB00E211DC2CEE10018277D /* battery911Model.xcdatamodel */;
+			path = battery911Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4CB00DEC1DC2C65A0018277D /* Project object */;
 }

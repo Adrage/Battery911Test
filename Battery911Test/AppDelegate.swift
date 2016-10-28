@@ -3,7 +3,7 @@
 //  Battery911Test
 //
 //  Created by Adrian C. Johnson on 10/27/16.
-//  Copyright © 2016 SDCrossVIsion Development Studios. All rights reserved.
+//  Copyright © 2016 Cross Vision Development Studios. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        MagicalRecord.setupAutoMigratingCoreDataStack()
+        
+        // Comment out to keep existing data
+        testData()
+        
         return true
     }
 
@@ -40,7 +46,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    
+    // MARK: - Custom Methods
+    func testData() {
+        MagicalRecord.saveWithBlockAndWait { (localContext: NSManagedObjectContext) in
+            if let testResultsArray = TestResult.MR_findAll() as? [TestResult] {
+                for testResult in testResultsArray {
+                    testResult.MR_deleteEntityInContext(localContext)
+                }
+            }
+        }
+        
+        TestResult.createTestResultWithPatientName("James Petterson", hasMigraines: true, age: 20, gender: "male", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("Chris Hale", hasMigraines: true, age: 15, gender: "male", usedHallucinogenicDrugs: true, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("Chloe Johnson", hasMigraines: false, age: 30, gender: "female", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("Emilee Franklin", hasMigraines: true, age: 44, gender: "female", usedHallucinogenicDrugs: true, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("Seth Brown", hasMigraines: false, age: 8, gender: "male", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("John Smith", hasMigraines: true, age: 11, gender: "male", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
+    }
 }
 
