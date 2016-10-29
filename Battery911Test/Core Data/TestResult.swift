@@ -11,7 +11,7 @@ import CoreData
 
 @objc(TestResult)
 class TestResult: NSManagedObject {
-    
+    // MARK: - Instance Methods
     func dictionaryRepresentation() -> [String : AnyObject] {
         var properties = [String : AnyObject]()
         if let _patientName = self.patientName {
@@ -62,7 +62,7 @@ class TestResult: NSManagedObject {
             total += _age.integerValue <= 15 ? 25 : 0
         }
         if let _gender = self.gender {
-            total += _gender == "Male" ? 25 : 0
+            total += _gender.capitalizedString == "Male" ? 25 : 0
         }
         if let _usedHallucinogenicDrugs = self.usedHallucinogenicDrugs {
             total += _usedHallucinogenicDrugs.boolValue ? 25 : 0
@@ -70,6 +70,7 @@ class TestResult: NSManagedObject {
         return "\(total)%"
     }
     
+    // MARK: - Class Methods
     class func createTestResultWithPatientName(patientName: String, hasMigraines: Bool, age: Int, gender: String, usedHallucinogenicDrugs: Bool, completion: (() -> Void)?, failure failureBlock: ((error: NSError) -> Void)?) {
         MagicalRecord.saveWithBlock({ (localContext: NSManagedObjectContext) in
             let testResult = TestResult.MR_createEntityInContext(localContext)
@@ -88,19 +89,50 @@ class TestResult: NSManagedObject {
         }
     }
     
-    class func deleteTestResult(testResult: TestResult, viewController: UIViewController?) {
+    class func deleteTestResult(testResult: TestResult, completion: (() -> Void)?, failure failureBlock: ((error: NSError) -> Void)?) {
         MagicalRecord.saveWithBlock({ (localContext: NSManagedObjectContext) in
             testResult.MR_deleteEntityInContext(localContext)
         }, completion: { (MR_Success: Bool, MR_Error: NSError?) in
-            if let _viewController = viewController {
+            if let error = MR_Error {
+                failureBlock?(error: error)
+            } else {
                 dispatch_async(GlobalMainQueue, {
-                    let alertController = UIAlertController(title: "Record Deleted", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (alertAction: UIAlertAction) in
-                        alertController.dismissViewControllerAnimated(true, completion: nil)
-                    }))
-                    _viewController.presentViewController(alertController, animated: true, completion: nil)
+                    completion?()
                 })
             }
         })
+    }
+    
+    //API Call
+    class func fetchTestResultsWithCompletion(completion: () -> Void, failure failureBlock: ((error: NSError) -> Void)?) {
+        let urlString = "https://api.someurl.com"
+        
+        if let url = NSURL(string: urlString) {
+            let session = NSURLSession.sharedSession()
+            
+            let task = session.dataTaskWithURL(url, completionHandler: { (data: NSData?, response: NSURLResponse?, error: NSError?) in
+                guard let data = data else {
+                    let error = NSError(domain: "No Data Returned", code: 0, userInfo: nil)
+                    failureBlock!(error: error)
+                    return
+                }
+                
+                guard error == nil else {
+                    failureBlock?(error: error!)
+                    return
+                }
+                
+                do {
+                    let jsonDict = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers) as! [String : AnyObject]
+                    if let testResults = jsonDict["testresults"]?["items"] as? [[NSObject : AnyObject]] {
+                        TestResult.MR_importFromArray(testResults)
+                    }
+                }
+                catch let error as NSError {
+                    failureBlock?(error: error)
+                }
+            })
+            task.resume()
+        }
     }
 }

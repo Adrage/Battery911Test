@@ -68,7 +68,15 @@ class TestResultListTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.Delete) {
             if let testResult = fetchedResultsController?.objectAtIndexPath(indexPath) as? TestResult {
-                TestResult.deleteTestResult(testResult, viewController: self)
+                TestResult.deleteTestResult(testResult, completion: {
+                    let alertController = UIAlertController(title: "Record Deleted", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (alertAction: UIAlertAction) in
+                        alertController.dismissViewControllerAnimated(true, completion: nil)
+                    }))
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                }, failure: { (error) in
+                    print(error.localizedDescription)
+                })
             }
         }
     }

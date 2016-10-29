@@ -58,12 +58,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        TestResult.createTestResultWithPatientName("James Petterson", hasMigraines: true, age: 20, gender: "male", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
-        TestResult.createTestResultWithPatientName("Chris Hale", hasMigraines: true, age: 15, gender: "male", usedHallucinogenicDrugs: true, completion: nil, failure: nil)
-        TestResult.createTestResultWithPatientName("Chloe Johnson", hasMigraines: false, age: 30, gender: "female", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
-        TestResult.createTestResultWithPatientName("Emilee Franklin", hasMigraines: true, age: 44, gender: "female", usedHallucinogenicDrugs: true, completion: nil, failure: nil)
-        TestResult.createTestResultWithPatientName("Seth Brown", hasMigraines: false, age: 8, gender: "male", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
-        TestResult.createTestResultWithPatientName("John Smith", hasMigraines: true, age: 11, gender: "male", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("James Petterson", hasMigraines: true, age: 20, gender: "Male", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("Chris Hale", hasMigraines: true, age: 15, gender: "Male", usedHallucinogenicDrugs: true, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("Chloe Johnson", hasMigraines: false, age: 30, gender: "Female", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("Emilee Franklin", hasMigraines: true, age: 44, gender: "Female", usedHallucinogenicDrugs: true, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("Seth Brown", hasMigraines: false, age: 8, gender: "Male", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
+        TestResult.createTestResultWithPatientName("John Smith", hasMigraines: true, age: 11, gender: "Male", usedHallucinogenicDrugs: false, completion: nil, failure: nil)
     }
 }
 

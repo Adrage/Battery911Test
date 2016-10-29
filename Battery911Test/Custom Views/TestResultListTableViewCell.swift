@@ -38,7 +38,14 @@ extension TestResultListTableViewCell {
     func configureForTestResult(testResult: TestResult) {
         nameLabel.text = testResult.patientName
         scoreLabel.text = testResult.score()
-        print(testResult.score())
+        
+        if testResult.score() == "100%" {
+            nameLabel.textColor = UIColor.redColor()
+            scoreLabel.textColor = UIColor.redColor()
+        } else {
+            nameLabel.textColor = UIColor.blackColor()
+            scoreLabel.textColor = UIColor.blackColor()
+        }
     }
 }
 

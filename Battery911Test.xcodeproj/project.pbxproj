@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		0A5EB25D10A6885A771009C5 /* libPods-Battery911TestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D659A967DDA6C89CE2633059 /* libPods-Battery911TestTests.a */; };
 		4C8472E81DC30B2E00237776 /* Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8472E71DC30B2E00237776 /* Defines.swift */; };
+		4C8472EA1DC3215D00237776 /* TestResultEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8472E91DC3215D00237776 /* TestResultEntryTableViewController.swift */; };
 		4CB00DF81DC2C65A0018277D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00DF71DC2C65A0018277D /* AppDelegate.swift */; };
 		4CB00DFF1DC2C65A0018277D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB00DFD1DC2C65A0018277D /* Main.storyboard */; };
 		4CB00E011DC2C65A0018277D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CB00E001DC2C65A0018277D /* Assets.xcassets */; };
 		4CB00E041DC2C65A0018277D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB00E021DC2C65A0018277D /* LaunchScreen.storyboard */; };
 		4CB00E0F1DC2C65A0018277D /* Battery911TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E0E1DC2C65A0018277D /* Battery911TestTests.swift */; };
-		4CB00E1D1DC2C8E80018277D /* TestResult22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E1C1DC2C8E80018277D /* TestResult22.swift */; };
 		4CB00E221DC2CEE10018277D /* battery911Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E201DC2CEE10018277D /* battery911Model.xcdatamodeld */; };
 		4CB00E2C1DC2D0BD0018277D /* TestResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E2A1DC2D0BD0018277D /* TestResult+CoreDataProperties.swift */; };
 		4CB00E2D1DC2D0BD0018277D /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB00E2B1DC2D0BD0018277D /* TestResult.swift */; };
@@ -38,6 +38,7 @@
 		22F2D0FDC2F4D26D765AB90E /* Pods-Battery911Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Battery911Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Battery911Test/Pods-Battery911Test.release.xcconfig"; sourceTree = "<group>"; };
 		253CB3D70E12A50292C8323B /* Pods-Battery911Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Battery911Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Battery911Test/Pods-Battery911Test.debug.xcconfig"; sourceTree = "<group>"; };
 		4C8472E71DC30B2E00237776 /* Defines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defines.swift; sourceTree = "<group>"; };
+		4C8472E91DC3215D00237776 /* TestResultEntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResultEntryTableViewController.swift; sourceTree = "<group>"; };
 		4CB00DF41DC2C65A0018277D /* Battery911Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Battery911Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB00DF71DC2C65A0018277D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CB00DFE1DC2C65A0018277D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		4CB00E0A1DC2C65A0018277D /* Battery911TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Battery911TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CB00E0E1DC2C65A0018277D /* Battery911TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battery911TestTests.swift; sourceTree = "<group>"; };
 		4CB00E101DC2C65A0018277D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4CB00E1C1DC2C8E80018277D /* TestResult22.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestResult22.swift; sourceTree = "<group>"; };
 		4CB00E211DC2CEE10018277D /* battery911Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = battery911Model.xcdatamodel; sourceTree = "<group>"; };
 		4CB00E231DC2D0640018277D /* Battery911Test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Battery911Test-Bridging-Header.h"; sourceTree = "<group>"; };
 		4CB00E2A1DC2D0BD0018277D /* TestResult+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TestResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -118,7 +118,6 @@
 				4CB00DF71DC2C65A0018277D /* AppDelegate.swift */,
 				4C8472E71DC30B2E00237776 /* Defines.swift */,
 				4CB00E001DC2C65A0018277D /* Assets.xcassets */,
-				4CB00E1A1DC2C7970018277D /* Custom Objects */,
 				4CB00E1B1DC2C7FD0018277D /* Custom Views */,
 				4CB00E051DC2C65A0018277D /* Info.plist */,
 				4CB00E021DC2C65A0018277D /* LaunchScreen.storyboard */,
@@ -141,16 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				4CB00E2E1DC2E6DE0018277D /* TestResultListTableViewController.swift */,
+				4C8472E91DC3215D00237776 /* TestResultEntryTableViewController.swift */,
 			);
 			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		4CB00E1A1DC2C7970018277D /* Custom Objects */ = {
-			isa = PBXGroup;
-			children = (
-				4CB00E1C1DC2C8E80018277D /* TestResult22.swift */,
-			);
-			path = "Custom Objects";
 			sourceTree = "<group>";
 		};
 		4CB00E1B1DC2C7FD0018277D /* Custom Views */ = {
@@ -402,9 +394,9 @@
 			files = (
 				4CB00E2C1DC2D0BD0018277D /* TestResult+CoreDataProperties.swift in Sources */,
 				4CB00E341DC2F6A20018277D /* TestResultListTableViewCell.swift in Sources */,
-				4CB00E1D1DC2C8E80018277D /* TestResult22.swift in Sources */,
 				4CB00E2F1DC2E6DE0018277D /* TestResultListTableViewController.swift in Sources */,
 				4CB00E221DC2CEE10018277D /* battery911Model.xcdatamodeld in Sources */,
+				4C8472EA1DC3215D00237776 /* TestResultEntryTableViewController.swift in Sources */,
 				4CB00DF81DC2C65A0018277D /* AppDelegate.swift in Sources */,
 				4C8472E81DC30B2E00237776 /* Defines.swift in Sources */,
 				4CB00E2D1DC2D0BD0018277D /* TestResult.swift in Sources */,

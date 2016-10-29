@@ -16,7 +16,47 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adrian C. Johnson 2016" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbA-Ss-IUJ">
+                                <rect key="frame" x="150" y="529" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="TZJ-fM-Ipp"/>
+                                    <constraint firstAttribute="width" constant="300" id="yLx-Wk-Esl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todd’s Syndrome Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pss-jC-vIF">
+                                <rect key="frame" x="135" y="283" width="330" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="iJ9-L0-Zm8"/>
+                                    <constraint firstAttribute="width" constant="330" id="ufQ-qb-Uio"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batteries 911" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCH-Bm-v1V">
+                                <rect key="frame" x="235" y="326" width="130" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ldf-1o-oe0"/>
+                                    <constraint firstAttribute="width" constant="130" id="ki6-Oa-odj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pss-jC-vIF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9H7-X4-bK9"/>
+                            <constraint firstItem="SbA-Ss-IUJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="NAm-lK-PIJ"/>
+                            <constraint firstItem="YCH-Bm-v1V" firstAttribute="top" secondItem="pss-jC-vIF" secondAttribute="bottom" constant="8" id="NNy-Ck-iw3"/>
+                            <constraint firstItem="YCH-Bm-v1V" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UH5-Q8-5pc"/>
+                            <constraint firstItem="pss-jC-vIF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="VCk-bM-rAC"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="SbA-Ss-IUJ" secondAttribute="bottom" constant="50" id="fOG-LJ-BWA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
